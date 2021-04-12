@@ -25,31 +25,26 @@
 			<img src="<?php bloginfo('template_directory');?>\Logo\Sans titre.png" width="190px" height="120px">
 			</div>
 		
-		<?php 
+			
+			
+			<?php 
 		wp_nav_menu(
 				array(
 						'theme_location' => 'top-menu',
-						'menu_id' => 'MenuItems',
+						'menu_id' => 'main-menu',
 						'container' => 'nav',
 						'menu_class' => 'navbar, container',
-				)
+
+					)
 		
 		);?>
-		
-		<!--<nav>
-			<ul id="MenuItems">
-				<li><a href="Index.html">Home</a></li>
-
-				
-				<li><a href="">Products</a></li>
-				
-				
-				<li><a href="About_Us.html">About</a></li>
-			</ul>
-		</nav> -->							<!------ Set up the images------>
+			
+		<!------ Set up the images------>
 		<img src="<?php bloginfo('template_directory');?>\images\iconfinder_shopping-cart_216477.png" width="30px" height="30px">
-		<img src="<?php bloginfo('template_directory');?>\images\iconfinder_menu_1814109.png" class="menu_icon" onclick="menutoggle()">
+		<img src="<?php bloginfo('template_directory');?>\images\iconfinder_menu_1814109.png" class="menu_icon" onclick="menutoggle();">
 	</div> 
 	</div>	
    
 <!------------------------------------------------------------------------------------------- /Header ------------------------------------------------------------------------------>	
+
+

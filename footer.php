@@ -5,26 +5,18 @@
 			<div class="row">
 				<div class="footerCol01">
 				<h3>Menu</h3>
-				<?php 
+					<?php 
 		wp_nav_menu(
 				array(
 						'theme_location' => 'top-menu',					
 						'container' => 'ul',
-						'menu_class' => 'row, footerCol01',
+						'row' => 'ul',
+						'menu_class' => 'footerCol01',
 
 					)
 		
 		);?>
-				 <!-- <ul>
-					<li><a href="Index.html">Home</a></li>
-					
-					
-					<li><a href="">Products</a></li>
-					
-					
-					
-					<li><a href="About_Us.html">About</a></li>
-				  </ul> -->
+				
 				</div>
 				<div class="footerCol02">		<!------ Set up the image------>
 				<img src="<?php bloginfo('template_directory');?>\Logo\Sans titre.png" width="230px" height="230px">

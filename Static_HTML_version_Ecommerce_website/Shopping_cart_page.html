@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  
+  <title>Cart - NextHighFitness</title>
+  <meta charset = "UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body> 
+<!------------------------------------------------------------------------------------------- Header ------------------------------------------------------------------------------>
+   <div class="header">
+   
+	<div class="container">
+	
+		<div class="navbar">
+			<div class="logo">
+			<a href="Index.html"><img src="Logo\Sans titre.png" width="190px" height="120px"></a>
+			</div>
+		
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="indexProduct.html">Products</a></li>
+				<li><a href="About_Us.html">About</a></li>
+			</ul>
+		</nav>
+		<img src="C:\Users\User\Documents\Chinduji's doc\Chinduji's school doc\Studies\Individual project (S2)\PID v1\Website\images\iconfinder_shopping-cart_216477.png" width="30px" height="30px">
+		<img src="C:\Users\User\Documents\Chinduji's doc\Chinduji's school doc\Studies\Individual project (S2)\PID v1\Website\images\iconfinder_menu_1814109.png" class="menu_icon" onclick="menutoggle()">
+	</div> 
+	</div>	
+   </div>
+<!------------------------------------------------------------------------------------------- /Header ------------------------------------------------------------------------------>	
+<!------------------------------------------------------------------------------------------- Cart Items ------------------------------------------------------------------------------>	
+	<div class="small-container cart-page">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+					 <img src="C:\Users\User\Documents\Chinduji's doc\Chinduji's school doc\Studies\Individual project (S2)\PID v1\Website\images\Sans titre.png">
+						<div>
+							<p>"product name"</p>
+							<small>Price: £"Price"</small>
+							<br>
+							<a href="">Remove</a>
+						</div>
+					</div>		
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>£????</td>
+			</tr>
+		</table>
+		<div class="total-price">
+				<table>
+					<tr>
+						<td>Subtotal</td>
+						<td>£????</td>
+					</tr>
+					<tr>
+						<td>Total</td>
+						<td>£????</td>
+					</tr>
+				</table>
+			</div>
+	</div>
+<!------------------------------------------------------------------------------------------- /Cart Items ------------------------------------------------------------------------------>	
+<!------------------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footerCol01">
+				<h3>Menu</h3>
+				  <ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="indexProduct.html">Products</a></li>
+					<li><a href="About_Us.html">About</a></li>
+				  </ul>
+				</div>
+				<div class="footerCol02">
+				<a href="Index.html"><img src="Logo\Sans titre.png" width="230px" height="230px"></a>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2021 - NextHighTech.net</p>
+		</div>
+	</div>
+
+
+<!------------------------------------------------------------------------------------------- /Footer ------------------------------------------------------------------------------>
+<!--- Javascript for toggle menu ----->
+	<script>
+		var menuItems = document.getElementById("MenuItems");
+		
+		menuItems.style.maxHeight = "0px";
+		
+		function menutoggle(){
+		
+		  if(menuItems.style.maxHeight == "0px")
+		  {
+		  menuItems.style.maxHeight = "200px";
+		  }
+		  else
+		  {
+		  menuItems.style.maxHeight = "0px";
+		  }
+		
+		
+		}
+	</script>
+</body>
+</html>
